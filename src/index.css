@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-50: #fbfbf4;
+  --color-gold-100: #f6f5df;
+  --color-gold-200: #eeebbd;
+  --color-gold-600: #b59f51;
+  --color-gold-700: #937d3c;
+  --color-gold-900: #4e401b;
+}
+
+body {
+  background-color: #fcfbfa; /* Soft warm light off-white background */
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom shadow effects for boutique luxury hotel aesthetic */
+.shadow-soft {
+  box-shadow: 0 4px 20px -2px rgba(80, 75, 60, 0.05), 0 2px 8px -1px rgba(80, 75, 60, 0.02);
+}
+
+.shadow-premium {
+  box-shadow: 0 12px 30px -4px rgba(80, 75, 60, 0.08), 0 4px 12px -2px rgba(80, 75, 60, 0.04);
+}
+
+.gradient-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
